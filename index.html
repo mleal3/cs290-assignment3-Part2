@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Assignment 3 Part 2</title>
+		<script src = "src.js"></script>
+	</head>
+	<body>
+		<h2>Recent GitHub Gists</h2>
+		<h4>Please choose the number of page results to display. Choose between 1 and 5.</h4>
+		<input type="text" name="numPagesInput" size ="5">
+		<input type="button" name="inputSave" onclick ="inputSave" value="Save Number">
+
+		<form>
+
+		<h4>Please select the languages of Gists you would like to see:</h4>
+		<input id="Python" type="checkbox" name="Language" value="Python">Python</br>
+		<input id="JSON" type="checkbox" name="Language" value="JSON">JSON</br>
+		<input id="JavaScript" type="checkbox" name="Language" value="JavaScript">JavaScript</br>
+		<input id="SQL" type="checkbox" name="Language" value="SQL">SQL</br></br>
+		<input type="button" name="page" onclick="languageChoice"value="Save Language"></br></br>
+
+		</form>
+
+		<input type="button" name="page" onclick="getPages"value="Search"></br></br>
+		<div id="result">Results: </div></br>
+		<div id="favorites">Favorites: </div>
+	
+	</body>	
+</html>
